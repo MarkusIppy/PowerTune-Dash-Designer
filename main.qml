@@ -8,9 +8,9 @@ ApplicationWindow {
     width: 1100
     height: 480
     title: qsTr("PowerTune Dash Designer V 0.1 Beta")
-    property var vertvisble: false
-    property var horizvisible: false
-    property var secvisible: false
+    property bool vertvisble: false
+    property bool horizvisible: false
+    property bool secvisible: false
     property var component;
     property double testvalue: testvalueslider.value;
     property int gaugenumber : 1;
@@ -343,7 +343,7 @@ ApplicationWindow {
             function updatevalues(){
                 switch (gaugeselect.currentIndex) {
                 case 0:
-                {
+
                   /*
                   gwidth.text = gauge1.width
                   gheight.text = gauge1.height
@@ -359,103 +359,103 @@ ApplicationWindow {
                   highwarn.text = gauge1.warnvaluehigh
                   units.text = gauge1.mainunit*/
                     break;
-                }
+
                 case 1:
-                {
+
 
                     break;
-                }
+
                 case 2:
-                {
+
 
                     break;
-                }
+
                 case 3:
-                {
+
 
                     break;
-                }
+
                 case 4:
-                {
+
 
                     break;
-                }
+
                 case 5:
-                {
+
 
                     break;
-                }
+
                 case 6:
-                {
+
 
 
                     break;
-                }
+
                 case 7:
-                {
+
 
                     break;
-                }
+
                 case 8:
-                {
+
 
                     break;
-                }
+
                 case 9:
-                {
+
 
                     break;
-                }
+
                 case 10:
-                {
+
 
                     break;
-                }
+
                 case 11:
-                {
+
 
                     break;
-                }
+
                 case 12:
-                {
+
 
                     break;
-                }
+
                 case 13:
-                {
+
 
                     break;
-                }
+
                 case 14:
-                {
+
 
                     break;
-                }
+
                 case 15:
-                {
+
 
                     break;
-                }
+
                 case 16:
-                {
+
 
                     break;
-                }
+
                 case 17:
-                {
+
 
                     break;
-                }
+
                 case 18:
-                {
+
 
                     break;
-                }
+
                 case 19:
-                {
+
 
                     break;
-                }
+
                 }
             }
         }
@@ -465,7 +465,7 @@ ApplicationWindow {
             function valuechange(){
                 switch (gaugeselect.currentIndex) {
                 case 0:
-                {
+
                     gauge1.width = gwidth.text
                     gauge1.height = gheight.text
                     gauge1.title = title.text
@@ -478,9 +478,9 @@ ApplicationWindow {
                     gauge1.warnvaluehigh = highwarn.text
                     gauge1.mainunit = units.text
                     break;
-                }
+
                 case 1:
-                {
+
                     gauge2.width = gwidth.text
                     gauge2.height = gheight.text
                     gauge2.title = title.text
@@ -493,9 +493,9 @@ ApplicationWindow {
                     gauge2.warnvaluehigh = highwarn.text
                     gauge2.mainunit = units.text
                     break;
-                }
+
                 case 2:
-                {
+
                     gauge3.width = gwidth.text
                     gauge3.height = gheight.text
                     gauge3.title = title.text
@@ -508,9 +508,9 @@ ApplicationWindow {
                     gauge3.warnvaluehigh = highwarn.text
                     gauge3.mainunit = units.text
                     break;
-                }
+
                 case 3:
-                {
+
                     gauge4.width = gwidth.text
                     gauge4.height = gheight.text
                     gauge4.title = title.text
@@ -523,9 +523,9 @@ ApplicationWindow {
                     gauge4.warnvaluehigh = highwarn.text
                     gauge4.mainunit = units.text
                     break;
-                }
+
                 case 4:
-                {
+
                     gauge5.width = gwidth.text
                     gauge5.height = gheight.text
                     gauge5.title = title.text
@@ -538,9 +538,9 @@ ApplicationWindow {
                     gauge5.warnvaluehigh = highwarn.text
                     gauge5.mainunit = units.text
                     break;
-                }
+
                 case 5:
-                {
+
                     gauge6.width = gwidth.text
                     gauge6.height = gheight.text
                     gauge6.title = title.text
@@ -553,9 +553,9 @@ ApplicationWindow {
                     gauge6.warnvaluehigh = highwarn.text
                     gauge6.mainunit = units.text
                     break;
-                }
+
                 case 6:
-                {
+
                     gauge7.width = gwidth.text
                     gauge7.height = gheight.text
                     gauge7.title = title.text
@@ -568,9 +568,9 @@ ApplicationWindow {
                     gauge7.warnvaluehigh = highwarn.text
                     gauge7.mainunit = units.text
                     break;
-                }
+
                 case 7:
-                {
+
                     gauge8.width = gwidth.text
                     gauge8.height = gheight.text
                     gauge8.title = title.text
@@ -583,9 +583,9 @@ ApplicationWindow {
                     gauge8.warnvaluehigh = highwarn.text
                     gauge8.mainunit = units.text
                     break;
-                }
+
                 case 8:
-                {
+
                     gauge9.width = gwidth.text
                     gauge9.height = gheight.text
                     gauge9.title = title.text
@@ -598,9 +598,9 @@ ApplicationWindow {
                     gauge9.warnvaluehigh = highwarn.text
                     gauge9.mainunit = units.text
                     break;
-                }
+
                 case 9:
-                {
+
                     gauge10.width = gwidth.text
                     gauge10.height = gheight.text
                     gauge10.title = title.text
@@ -613,9 +613,9 @@ ApplicationWindow {
                     gauge10.warnvaluehigh = highwarn.text
                     gauge10.mainunit = units.text
                     break;
-                }
+
                 case 10:
-                {
+
                     gauge11.width = gwidth.text
                     gauge11.height = gheight.text
                     gauge11.title = title.text
@@ -628,9 +628,9 @@ ApplicationWindow {
                     gauge11.warnvaluehigh = highwarn.text
                     gauge11.mainunit = units.text
                     break;
-                }
+
                 case 11:
-                {
+
                     gauge12.width = gwidth.text
                     gauge12.height = gheight.text
                     gauge12.title = title.text
@@ -643,9 +643,9 @@ ApplicationWindow {
                     gauge12.warnvaluehigh = highwarn.text
                     gauge12.mainunit = units.text
                     break;
-                }
+
                 case 12:
-                {
+
                     gauge13.width = gwidth.text
                     gauge13.height = gheight.text
                     gauge13.title = title.text
@@ -658,9 +658,9 @@ ApplicationWindow {
                     gauge13.warnvaluehigh = highwarn.text
                     gauge13.mainunit = units.text
                     break;
-                }
+
                 case 13:
-                {
+
                     gauge14.width = gwidth.text
                     gauge14.height = gheight.text
                     gauge14.title = title.text
@@ -673,9 +673,9 @@ ApplicationWindow {
                     gauge14.warnvaluehigh = highwarn.text
                     gauge14.mainunit = units.text
                     break;
-                }
+
                 case 14:
-                {
+
                     gauge15.width = gwidth.text
                     gauge15.height = gheight.text
                     gauge15.title = title.text
@@ -688,9 +688,9 @@ ApplicationWindow {
                     gauge15.warnvaluehigh = highwarn.text
                     gauge15.mainunit = units.text
                     break;
-                }
+
                 case 15:
-                {
+
                     gauge16.width = gwidth.text
                     gauge16.height = gheight.text
                     gauge16.title = title.text
@@ -703,9 +703,9 @@ ApplicationWindow {
                     gauge16.warnvaluehigh = highwarn.text
                     gauge16.mainunit = units.text
                     break;
-                }
+
                 case 16:
-                {
+
                     gauge17.width = gwidth.text
                     gauge17.height = gheight.text
                     gauge17.title = title.text
@@ -718,9 +718,9 @@ ApplicationWindow {
                     gauge17.warnvaluehigh = highwarn.text
                     gauge17.mainunit = units.text
                     break;
-                }
+
                 case 17:
-                {
+
                     gauge18.width = gwidth.text
                     gauge18.height = gheight.text
                     gauge18.title = title.text
@@ -733,9 +733,9 @@ ApplicationWindow {
                     gauge18.warnvaluehigh = highwarn.text
                     gauge18.mainunit = units.text
                     break;
-                }
+
                 case 18:
-                {
+
                     gauge19.width = gwidth.text
                     gauge19.height = gheight.text
                     gauge19.title = title.text
@@ -748,9 +748,9 @@ ApplicationWindow {
                     gauge19.warnvaluehigh = highwarn.text
                     gauge19.mainunit = units.text
                     break;
-                }
+
                 case 19:
-                {
+
                     gauge20.width = gwidth.text
                     gauge20.height = gheight.text
                     gauge20.title = title.text
@@ -763,7 +763,7 @@ ApplicationWindow {
                     gauge20.warnvaluehigh = highwarn.text
                     gauge20.mainunit = units.text
                     break;
-                }
+
                 }
             }
         }
@@ -772,7 +772,7 @@ ApplicationWindow {
             id: container
             function createSquareGauge(setWidth,setHeight,setX,setY,setMaxValue,setDecPlace,setUnit,setID,setVertGaugeVis,setHoriGaugeVis,setSecValueVis,SetValueObject,SetValuePropertyMain,SetValuePropertySec,Setwarnvaluehigh,Setwarnvaluelow) {
                 component = Qt.createComponent("SquareGauge.qml");
-                if (component.status == Component.Ready){
+                if (component.status === Component.Ready){
                     console.log("component ready");
                     finishCreation(setWidth,setHeight,setX,setY,setMaxValue,setDecPlace,setUnit,setID,setVertGaugeVis,setHoriGaugeVis,setSecValueVis,SetValueObject,SetValuePropertyMain,SetValuePropertySec,Setwarnvaluehigh,Setwarnvaluelow);
                 }
@@ -783,10 +783,10 @@ ApplicationWindow {
             }
 
             function finishCreation(setWidth,setHeight,setX,setY,setMaxValue,setDecPlace,setUnit,setID,setVertGaugeVis,setHoriGaugeVis,setSecValueVis,SetValueObject,SetValuePropertyMain,SetValuePropertySec,Setwarnvaluehigh,Setwarnvaluelow) {
-                if (component.status == Component.Ready) {
+                if (component.status === Component.Ready) {
                     gaugeselect.currentIndex = gaugenumber-1
                     switch (gaugenumber) {
-                    case 1: {
+                    case 1:
                         gauge1 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -798,14 +798,14 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge1 == null) {
+                        if (gauge1 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
 
-                    case 2: {
+
+                    case 2:
                         gauge2 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -817,13 +817,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge2 == null) {
+                        if (gauge2 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 3: {
+
+                    case 3:
                         gauge3 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -835,13 +835,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge3 == null) {
+                        if (gauge3 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 4: {
+
+                    case 4:
                         gauge4 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -853,13 +853,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge4 == null) {
+                        if (gauge4 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 5: {
+
+                    case 5:
                         gauge5 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -871,13 +871,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge5 == null) {
+                        if (gauge5 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 6: {
+
+                    case 6:
                         gauge6 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -889,13 +889,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge6 == null) {
+                        if (gauge6 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 7: {
+
+                    case 7:
                         gauge7 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -907,13 +907,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge7 == null) {
+                        if (gauge7 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 8: {
+
+                    case 8:
                         gauge8 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -925,13 +925,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge8 == null) {
+                        if (gauge8 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 9: {
+
+                    case 9:
                         gauge9 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                             "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                             "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -943,13 +943,13 @@ ApplicationWindow {
                                                             "horigaugevisible": setHoriGaugeVis,
                                                             "secvaluevisible": setSecValueVis,
                                                             "x": setX, "y": setY});
-                        if (gauge9 == null) {
+                        if (gauge9 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 10: {
+
+                    case 10:
                         gauge10 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -961,13 +961,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge10 == null) {
+                        if (gauge10 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 11: {
+
+                    case 11:
                         gauge11 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -979,13 +979,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge11 == null) {
+                        if (gauge11 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 12: {
+
+                    case 12:
                         gauge12 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -997,13 +997,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge12 == null) {
+                        if (gauge12 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 13: {
+
+                    case 13:
                         gauge13 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1015,13 +1015,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge13 == null) {
+                        if (gauge13 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 14: {
+
+                    case 14:
                         gauge14 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1033,13 +1033,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge14 == null) {
+                        if (gauge14 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 15: {
+
+                    case 15:
                         gauge15 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1051,13 +1051,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge15 == null) {
+                        if (gauge15 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 16: {
+
+                    case 16:
                         gauge16 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1069,13 +1069,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge16 == null) {
+                        if (gauge16 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 17: {
+
+                    case 17:
                         gauge17 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1087,13 +1087,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge17 == null) {
+                        if (gauge17 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 18: {
+
+                    case 18:
                         gauge18 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1105,13 +1105,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge18 == null) {
+                        if (gauge18 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 19: {
+
+                    case 19:
                         gauge19 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1123,13 +1123,13 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge19 == null) {
+                        if (gauge19 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
-                    case 20: {
+
+                    case 20:
                         gauge20 = component.createObject(appwindow, {"id": setID, "title":setID, "width": setWidth, "height": setHeight,
                                                              "mainvalue": Qt.binding(function(){return SetValueObject[SetValuePropertyMain].toFixed(setDecPlace)}),
                                                              "secvalue": Qt.binding(function(){return SetValueObject[SetValuePropertySec].toFixed(setDecPlace)}),
@@ -1141,12 +1141,12 @@ ApplicationWindow {
                                                              "horigaugevisible": setHoriGaugeVis,
                                                              "secvaluevisible": setSecValueVis,
                                                              "x": setX, "y": setY});
-                        if (gauge20 == null) {
+                        if (gauge20 === null) {
                             // Error Handling
                             console.log("Error creating object");
                         }
                         break;
-                    }
+
                     }
                 }
 

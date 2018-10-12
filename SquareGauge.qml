@@ -45,9 +45,9 @@ Rectangle {
         color: "black"
         border.color: "#9f9f9f"
         border.width: 2
-        property var placeholdersourcename: "Dashboard"
-        property var placeholdersourcepri: ""
-        property var placeholdersourcesec: ""
+        property string placeholdersourcename: "Dashboard"
+        property string placeholdersourcepri: ""
+        property string placeholdersourcesec: ""
         property alias title: gaugetextfield.text
         property alias mainunit: mainvalueunittextfield.text
         property alias vertgaugevisible: vertgauge.visible
